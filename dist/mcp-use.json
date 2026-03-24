@@ -1,0 +1,76 @@
+{
+  "includeInspector": false,
+  "buildTime": "2026-03-24T16:23:24.316Z",
+  "buildId": "7f196f713d8a5079",
+  "entryPoint": "dist/index.js",
+  "widgets": {
+    "config-panel": {
+      "description": "Configuration panel with live settings and feature flag toggles",
+      "exposeAsTool": false,
+      "metadata": {
+        "prefersBorder": true,
+        "invoking": "Loading config...",
+        "invoked": "Config loaded"
+      },
+      "title": "config-panel",
+      "props": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "config": {
+            "type": "object",
+            "propertyNames": {
+              "type": "string"
+            },
+            "additionalProperties": {
+              "type": "string"
+            }
+          },
+          "featureFlags": {
+            "type": "object",
+            "propertyNames": {
+              "type": "string"
+            },
+            "additionalProperties": {
+              "type": "boolean"
+            }
+          }
+        },
+        "required": [
+          "config",
+          "featureFlags"
+        ],
+        "additionalProperties": false
+      },
+      "inputs": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "config": {
+            "type": "object",
+            "propertyNames": {
+              "type": "string"
+            },
+            "additionalProperties": {
+              "type": "string"
+            }
+          },
+          "featureFlags": {
+            "type": "object",
+            "propertyNames": {
+              "type": "string"
+            },
+            "additionalProperties": {
+              "type": "boolean"
+            }
+          }
+        },
+        "required": [
+          "config",
+          "featureFlags"
+        ],
+        "additionalProperties": false
+      }
+    }
+  }
+}

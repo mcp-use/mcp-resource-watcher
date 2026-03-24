@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../.mcp-use/config-panel/entry.tsx"],
+  "sourcesContent": ["import React from 'react'\nimport { createRoot } from 'react-dom/client'\nimport './styles.css'\nimport Component from '/Users/e.t./Projects/mcp-use/mcp-servers/templates/resource-watcher/resources/config-panel/widget.tsx'\n\nconst container = document.getElementById('widget-root')\nif (container && Component) {\n  const root = createRoot(container)\n  root.render(<Component />)\n}\n"],
+  "mappings": "AAQc;AAPd,SAAS,kBAAkB;AAC3B,OAAO;AACP,OAAO,eAAe;AAEtB,MAAM,YAAY,SAAS,eAAe,aAAa;AACvD,IAAI,aAAa,WAAW;AAC1B,QAAM,OAAO,WAAW,SAAS;AACjC,OAAK,OAAO,oBAAC,aAAU,CAAE;AAC3B;",
+  "names": []
+}
