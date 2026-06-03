@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../resources/styles.css"],
+  "sourcesContent": ["@import \"tailwindcss\";\n\n@source \"./**/*.{ts,tsx,js,jsx,html}\";\n\n@theme {\n  --color-scheme: light dark;\n}\n\n@variant dark (&:where(.dark, .dark *));\n\nbody {\n  margin: 0;\n  font-family:\n    -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Roboto\", \"Oxygen\", \"Ubuntu\",\n    \"Cantarell\", \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n}\n"],
+  "mappings": ";;;AAEA,QAAQ;AAER,OAAO,EACL,cAAc,EAAE,MAAM,IAAI;AAG5B,SAAS,KAAK,CAAC,CAAC,CAAC,MAAM,CAAC,IAAI,EAAE,CAAC,KAAK;AAEpC;AACE,UAAQ;AACR;AAAA,IACE,aAAa;AAAA,IAAE,kBAAkB;AAAA,IAAE,UAAU;AAAA,IAAE,QAAQ;AAAA,IAAE,QAAQ;AAAA,IAAE,QAAQ;AAAA,IAC3E,WAAW;AAAA,IAAE,WAAW;AAAA,IAAE,YAAY;AAAA,IAAE,gBAAgB;AAAA,IAAE;AAC5D,0BAAwB;AACxB,2BAAyB;AAC3B;",
+  "names": []
+}

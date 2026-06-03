@@ -1,13 +1,21 @@
-import { jsx, jsxs } from "react/jsx-runtime";
+// resources/config-panel/widget.tsx
 import {
   McpUseProvider,
   useCallTool,
   useWidget
 } from "mcp-use/react";
 import { useCallback, useState } from "react";
-import "../styles.css";
-import { propSchema } from "./types";
-const widgetMetadata = {
+
+// resources/config-panel/types.ts
+import { z } from "zod";
+var propSchema = z.object({
+  config: z.record(z.string(), z.string()),
+  featureFlags: z.record(z.string(), z.boolean())
+});
+
+// resources/config-panel/widget.tsx
+import { jsx, jsxs } from "react/jsx-runtime";
+var widgetMetadata = {
   description: "Configuration panel with live settings and feature flag toggles",
   props: propSchema,
   exposeAsTool: false,
@@ -108,7 +116,7 @@ function FeatureToggle({
     )
   ] });
 }
-const ConfigPanel = () => {
+var ConfigPanel = () => {
   const { props, isPending, sendFollowUpMessage } = useWidget();
   const { callTool: updateConfig, isPending: isUpdating } = useCallTool("update-config");
   const { callTool: toggleFeature, isPending: isToggling } = useCallTool("toggle-feature");

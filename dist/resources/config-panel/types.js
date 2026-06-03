@@ -1,5 +1,6 @@
+// resources/config-panel/types.ts
 import { z } from "zod";
-const propSchema = z.object({
+var propSchema = z.object({
   config: z.record(z.string(), z.string()),
   featureFlags: z.record(z.string(), z.boolean())
 });

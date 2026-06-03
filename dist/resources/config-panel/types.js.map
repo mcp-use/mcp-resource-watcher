@@ -2,6 +2,6 @@
   "version": 3,
   "sources": ["../../../resources/config-panel/types.ts"],
   "sourcesContent": ["import { z } from \"zod\";\n\nexport const propSchema = z.object({\n  config: z.record(z.string(), z.string()),\n  featureFlags: z.record(z.string(), z.boolean()),\n});\n\nexport type ConfigPanelProps = z.infer<typeof propSchema>;\n"],
-  "mappings": "AAAA,SAAS,SAAS;AAEX,MAAM,aAAa,EAAE,OAAO;AAAA,EACjC,QAAQ,EAAE,OAAO,EAAE,OAAO,GAAG,EAAE,OAAO,CAAC;AAAA,EACvC,cAAc,EAAE,OAAO,EAAE,OAAO,GAAG,EAAE,QAAQ,CAAC;AAChD,CAAC;",
+  "mappings": ";AAAA,SAAS,SAAS;AAEX,IAAM,aAAa,EAAE,OAAO;AAAA,EACjC,QAAQ,EAAE,OAAO,EAAE,OAAO,GAAG,EAAE,OAAO,CAAC;AAAA,EACvC,cAAc,EAAE,OAAO,EAAE,OAAO,GAAG,EAAE,QAAQ,CAAC;AAChD,CAAC;",
   "names": []
 }

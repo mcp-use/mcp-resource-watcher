@@ -1,18 +1,19 @@
+// index.ts
 import { MCPServer, text, widget, object } from "mcp-use/server";
 import { z } from "zod";
-const server = new MCPServer({
+var server = new MCPServer({
   name: "resource-watcher",
   title: "Resource Watcher",
   version: "1.0.0",
   description: "Resource subscriptions, dynamic lists, and roots \u2014 showcasing live resource updates",
   baseUrl: process.env.MCP_URL || "http://localhost:3000"
 });
-let config = {
+var config = {
   theme: "light",
   language: "en",
   notifications: "on"
 };
-let featureFlags = {
+var featureFlags = {
   darkMode: true,
   betaFeatures: false
 };
